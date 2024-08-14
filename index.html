@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.tablet.css">
+    <link rel="stylesheet" href="styles/style.mobile.css">
+
+    <title>Decodificador</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="logo_alura">
+                <img src="assets/logo_alura.svg" alt="logo Alura Latam">
+            </div>
+
+            <div id="container">
+                <div id="user_input">
+                    <textarea name="input" id="input" placeholder="Digite seu texto" maxlength="200"></textarea> 
+                 </div>
+                 
+                 <div id="btn_container">
+                     <div id="notice">
+                         <img src="/assets/exclamation_circle.svg" alt="ícone de exclamação">
+                         <span>Apenas letras minúsculas e sem acento.</span>
+                     </div>
+     
+                     <div id="buttons">
+                         <div class="btn" onclick="encrypt()" id="btn_criptografar">Criptografar</div>
+                         <div class="btn" onclick="decrypt()" id="btn_descriptografar">Descriptografar</div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        
+        <aside id="message_display">
+            <!-- Parte onde será exibido o texto criptografado -->
+             <img src="assets/img.svg" alt="Imagem de uma menina segurando uma lupa, observando um dimante">
+
+             <div>
+                 <p>Nenhuma mensagem encontrada</p>
+                 <span>Digite um texo que você deseja criptografar ou descriptografar</span>
+             </div>
+        </aside>
+    </main>
+</body>
+</html>
